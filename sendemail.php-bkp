@@ -1,0 +1,8 @@
+<?php
+$old_path = getcwd();
+chdir('/home/amit/');
+$output = shell_exec('./email.sh');
+chdir($old_path);
+echo "<pre>$output</pre>";
+?>
+
